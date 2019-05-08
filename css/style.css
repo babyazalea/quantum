@@ -1,1 +1,7 @@
 @charset 'utf-8';
+
+@font-face {
+    font-family: "Qauntum";
+    src:url("../font/Quantum.otf");
+}
+
