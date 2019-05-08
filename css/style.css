@@ -8,11 +8,15 @@
 #wrap{
     width:100%;
     height:100vh;
+    
 }
 .solvay{
     position: relative;
-    width:100%;
-    height:100%;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:1000px;
+    height:500px;
     background:url(../img/solvay_gray_scale.jpg) no-repeat center;
     background-size:cover;
 }
@@ -25,11 +29,11 @@
 }
 
 .einstein{
-    bottom:11%;
-    right:38.5%;
+    bottom:65px;
+    right:385px;
     position: absolute;
 }
 
 .einstein img{
-    width:154px;
+    width:113px;
 }
