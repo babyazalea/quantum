@@ -2,16 +2,22 @@
 
 @font-face {
     font-family: "Qauntum";
-    src:url("../font/Quantum.otf");
+    src:url("../css/font/Quantum.otf");
 }
 
 body{
+}
+#wrap{
     background:url(../img/nasa_earth.jpg) no-repeat center;
     background-size:cover;
     height:100vh;
-}
-#wrap{
+    transition:all 0.5s;
     
+}
+#wrap.einsteinClicked{
+    background-image:url(../img/red_moon.jpg);
+    height:100vh;
+            
 }
 
 .text{
@@ -20,9 +26,8 @@ body{
 .text h1{
     font-size:150px;
     font-family: Quantum;
-    z-index:-100;
     position:absolute;
-    color:#fff;
+    color:rgba(255,255,255,0.5);
 }
 .first{
     top:80px;
@@ -48,15 +53,20 @@ body{
     /* width:235px;
     height:556px;
     background:url(../img/einstein_color.png) no-repeat center; */
-    
+    cursor: pointer;
 }
 
 .einstein{
-    bottom:65px;
-    right:385px;
+    bottom:72px;
+    right:387px;
     position: absolute;
+    opacity:0;
+    transition:all 2s;
+}
+.einstein:hover{
+    opacity:1;
 }
 
 .einstein img{
-    width:113px;
+    width:110px;
 }
