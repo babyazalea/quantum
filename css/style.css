@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Qauntum";
-    src:url("../css/font/Quantum.otf");
+    src:url("../font/Quantum.otf");
 }
 
 body{
@@ -25,7 +25,7 @@ body{
 }
 .text h1{
     font-size:150px;
-    font-family: Quantum;
+    font-family: 'Quantum';
     position:absolute;
     color:rgba(255,255,255,0.5);
 }
