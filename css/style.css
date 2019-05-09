@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Qauntum';
-    src:url('/font/Quantum.otf');
+    src:url('https://github.com/babyazalea/quantum/font/Qauntum.otf');
 }
 
 body{
@@ -27,7 +27,7 @@ body{
 }
 .title{
     font-size:150px;
-    font-family: 'Quantum';
+    font-family: Quantum;
     position:absolute;
     color:rgba(255,255,255,0.5);
 }
