@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Qauntum";
-    src:url("/font/Quantum.otf");
+    src:url("./font/Quantum.otf");
 }
 
 body{
@@ -20,14 +20,19 @@ body{
             
 }
 
-.text{
+.titleBox{
     position: relative;
+    opacity:1;
+    transition:all 0.5s;
 }
-.text h1{
+.title{
     font-size:150px;
     font-family: 'Quantum';
     position:absolute;
     color:rgba(255,255,255,0.5);
+}
+.titleBox.hide{
+    opacity:0;
 }
 .first{
     top:80px;
@@ -55,13 +60,16 @@ body{
     background:url(../img/einstein_color.png) no-repeat center; */
     cursor: pointer;
 }
+.solvay .scientist.on{
+    opacity:1;
+}
 
 .einstein{
     bottom:72px;
     right:387px;
     position: absolute;
     opacity:0;
-    transition:all 2s;
+    transition:all 0.5s;
 }
 .einstein:hover{
     opacity:1;
