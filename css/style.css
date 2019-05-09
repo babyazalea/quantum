@@ -1,8 +1,12 @@
 @charset 'utf-8';
 
 @font-face {
-    font-family: 'Qauntum';
-    src:url('https://github.com/babyazalea/quantum/font/Qauntum.otf');
+    font-family: 'a';
+    src: url('../font/quantum-webfont.woff2') format('woff2'),
+         url('../font/quantum-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 body{
@@ -27,7 +31,7 @@ body{
 }
 .title{
     font-size:150px;
-    font-family: Quantum;
+    font-family:a;
     position:absolute;
     color:rgba(255,255,255,0.5);
 }
