@@ -1,8 +1,8 @@
 @charset 'utf-8';
 
 @font-face {
-    font-family: "Qauntum";
-    src:url("../quantum/font/Quantum.otf");
+    font-family: 'Qauntum';
+    src:url('/font/Quantum.otf');
 }
 
 body{
