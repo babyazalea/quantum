@@ -5,19 +5,42 @@
     src:url("../font/Quantum.otf");
 }
 
-#wrap{
-    width:100%;
+body{
+    background:url(../img/nasa_earth.jpg) no-repeat center;
+    background-size:cover;
     height:100vh;
+}
+#wrap{
     
 }
-.solvay{
+
+.text{
     position: relative;
+}
+.text h1{
+    font-size:150px;
+    font-family: Quantum;
+    z-index:-100;
+    position:absolute;
+    color:#fff;
+}
+.first{
+    top:80px;
+    left:205px;
+}
+.second{
+    top:440px;
+    left:150px;
+}
+
+.solvay{
+    position: absolute;
     left:50%;
     top:50%;
     transform: translate(-50%,-50%);
     width:1000px;
     height:500px;
-    background:url(../img/solvay_gray_scale.jpg) no-repeat center;
+    background:url(../img/solvay_complete.png) no-repeat center;
     background-size:cover;
 }
 
