@@ -1,13 +1,16 @@
 @charset 'utf-8';
 
-@font-face {
-    font-family: 'a';
+/* @font-face {
+    font-family: 'Quantum';
     src: url('../font/quantum-webfont.woff2') format('woff2'),
          url('../font/quantum-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
-}
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand|Rock+Salt');
+
 
 body{
 }
@@ -19,32 +22,73 @@ body{
     
 }
 #wrap.einsteinClicked{
-    background-image:url(../img/red_moon.jpg);
+    background-image:url(../img/moon.jpg);
     height:100vh;
             
 }
 
-.titleBox{
-    position: relative;
+/* ----------title------------------- */
+
+/* .titleBox{
+    width:1000px;
+    height:500px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
     opacity:1;
     transition:all 0.5s;
 }
 .title{
     font-size:150px;
-    font-family:a;
-    position:absolute;
-    color:rgba(255,255,255,0.5);
+    font-family:Quantum;
+    color:rgba(202, 202, 202, 0.3);
 }
 .titleBox.hide{
     opacity:0;
 }
 .first{
-    top:80px;
-    left:205px;
+    float: left;
+    padding-left:25px;
+    padding-top:20px;
 }
 .second{
-    top:440px;
-    left:150px;
+    float:right;
+    padding-left:30px;
+    padding-top:230px;
+} */
+
+/*-------------main--------------*/
+.message{
+    position: fixed;
+    top:2%;
+    left:53%;
+    user-select: none;
+    opacity: 0.9;
+}
+.here{
+    font-family: Gochi Hand;
+    color:rgb(238, 238, 238);
+}
+.here i{
+    margin-left:10px;
+    vertical-align: middle; 
+}
+
+.me{
+    position: fixed;
+    right:-15px;
+    top:-10px;
+}
+.meColored{
+    filter:grayscale(100%);
+    width:50px;
+    transform: rotate(-20deg);
+    cursor: pointer;
+}
+.meColored:hover{
+    filter:grayscale(50%);
+    transform: rotate(-20deg) translateX(-5px);
 }
 
 .solvay{
@@ -54,8 +98,9 @@ body{
     transform: translate(-50%,-50%);
     width:1000px;
     height:500px;
-    background:url(../img/solvay_complete.png) no-repeat center;
+    background:url(../img/solvay_complete_modified.png) no-repeat center;
     background-size:cover;
+    
 }
 
 .solvay .scientist{
@@ -74,6 +119,7 @@ body{
     position: absolute;
     opacity:0;
     transition:all 0.5s;
+    filter:none;
 }
 .einstein:hover{
     opacity:1;
